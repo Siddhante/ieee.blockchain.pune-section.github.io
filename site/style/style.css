@@ -1,0 +1,329 @@
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle, #a18cd1 20%, #fbc2eb 100%);
+    animation: rainbow 28s linear infinite;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+#home .blockchain-box h1,p {
+    animation: rainbow 8s linear infinite;
+}
+#organiser .blockchain-box h1,p {
+    animation: rainbow 8s linear infinite;
+}
+
+/* Add keyframes for the rainbow text effect */
+@keyframes rainbow {
+    0% {
+        color: #4b0082; /* Indigo */
+    }
+
+    20% {
+        color: #00008b; /* Dark Blue */
+    }
+
+    40% {
+        color: #008080; /* Teal */
+    }
+
+    60% {
+        color: #2e8b57; /* Sea Green */
+    }
+
+    80% {
+        color: #8b4513; /* Saddle Brown */
+    }
+
+    100% {
+        color: #800000; /* Maroon */
+    }
+}
+
+
+/* The rest of your existing styles... */
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+/* Header Container Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: none;
+}
+
+/* Container Styles */
+.container {
+    margin: 20px;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+/* Home Section Styles */
+.container.blockchain-box.A {
+    background-size: cover;
+    background-image: url('');
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container.blockchain-box.A::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: backgroundAnimation 10s infinite;
+}
+
+.container.blockchain-box.A h1,
+.container.blockchain-box.A p {
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* Rectangular Box Styles */
+.agenda,
+.description,
+.event {
+    background-color: rgb(227, 193, 255);
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+.agenda h2,
+.description h2,
+.event h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.agenda ul,
+.event ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.agenda li,
+.event li {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+/* Hover Effect Styles */
+.profile-box {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hover Effect Styles for Profile Image */
+.profile-box img {
+    transition: transform 0.3s;
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Hover Effect Styles for Profile Image on Hover */
+.profile-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Grid Container Styles */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Register Button Styles */
+.register-button {
+    background-color: rgb(139, 16, 239);
+    padding: 10px;
+    font-size: large;
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 60%;
+    transition: transform 0.3s;
+}
+
+.register-button:hover {
+    color: black;
+    transform: scale(1.1) translateX(-50%);
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .tab-pane.active {
+    display: block;
+}
+/* Add your existing styles here */
+
+#poster-content {
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#poster-content img {
+    max-width: 100%;
+    height: auto;
+}
